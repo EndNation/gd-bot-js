@@ -5,7 +5,7 @@ const cf = require('./config.json');
 
 const devID = cf.devid;
 
-var bottoken = process.env.TOKEN;
+var bt = process.env.TOKEN;
 
 function log(l)
 {
@@ -58,4 +58,4 @@ c.on('message', async m => {
     }
 });
 
-c.login(bottoken);
+c.login(bt);
